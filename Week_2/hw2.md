@@ -4,7 +4,8 @@ In etl_web_to_gcs.py just replace year, month, color arguments by 2020, 1, green
 # 2
 * Cron may be set in cmd: ``` prefect deployment build ./etl_web_to_gcs.py:etl_web_to_gcs -n etl --cron "0 5 1 * *" ```
 * Cron may be set in Prefect Deployments
-* ```schedule: 
+* Cron may be set in yaml file:
+  ```schedule: 
         cron: 0 5 1 * *
         timezone: Asia/Almaty
   ```
